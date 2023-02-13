@@ -107,9 +107,9 @@ span {
 
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(34, 31, 31)),
-    url("./img/blazer2.png");
-  background-size: cover;
-  background-position: top;
+    url("./img/blazer2.png") no-repeat;
+  background-size: center;
+  background-position: center;
   background-attachment: fixed;
   -webkit-background-clip: border-box;
   height: 100vh;
@@ -307,6 +307,10 @@ span {
 @media (max-width: 768px) {
   body.disabled-scroll {
     overflow: hidden;
+  }
+
+  .hero {
+    background-size: 70%;
   }
 
   .navbar .navbar-list {
