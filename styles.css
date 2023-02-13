@@ -316,7 +316,7 @@ span {
       url("./img/blazer2.png") no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-size: auto;
+    background-size: cover;
     width: 100%;
   }
 
