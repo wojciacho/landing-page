@@ -4,7 +4,52 @@ const navMenu = document.querySelector(".navbar-list"),
   navbar = document.querySelector(".navbar"),
   findOutBtn = document.querySelector(".btn"),
   navbarList = document.querySelector(".navbar-list"),
-  imgContainer = document.querySelector(".img-container");
+  imgContainer = document.querySelector(".img-container"),
+  products = document.querySelectorAll(".product-wrapper"),
+  scrollLinks = document.querySelectorAll(".scroll-link"),
+  productBtn = document.querySelectorAll(".product-btn"),
+  payment = document.querySelector(".payment"),
+  arrivals = document.querySelector(".arrivals-container"),
+  modalClose = document.querySelector(".close");
+
+const closeModal = () => {
+  payment.classList.remove("visible");
+};
+
+const modal = () => {
+  payment.innerHTML = `
+  <h2 class="payment-title">Personal Information</h2>
+  <label>Name</label>
+  <input type="text" placeholder="John Doe" class="payment-input">
+  <label>Phone</label>
+  <input type="text" placeholder="+111 111 1111" class="payment-input">
+  <label>Address</label>
+  <input type="text" placeholder="Main Street" class="payment-input">
+  <h2 class="payment-title">Card Information</h2>
+  <div class="card-icon">
+    <img src="./img/visa.png" width="40" alt="" class="card-img">
+    <img src="./img/master.png" width="40" alt="" class="card-img">
+  </div>
+  <input type="password" class="payment-input" placeholder="Card Number">
+  <div class="card-info">
+    <input type="text" class="payment-input sm" placeholder="mm">
+    <input type="text" class="payment-input sm" placeholder="yyyy">
+    <input type="text" class="payment-input sm" placeholder="cvv">
+  </div>
+  <button class="payment-button" onclick="closeModal()">Checkout</button>
+  <div class="close" onclick="closeModal()">
+    <i class="fas fa-times"></i>
+  </div>
+`;
+  arrivals.appendChild(payment);
+};
+
+productBtn.forEach((button) =>
+  button.addEventListener("click", () => {
+    payment.classList.add("visible");
+    modal();
+  })
+);
 
 const stickyNav = () => {
   const scrollY = window.scrollY;
@@ -29,7 +74,6 @@ navCloseButton.addEventListener("click", () => {
   document.body.classList.remove("disabled-scroll");
 });
 
-const scrollLinks = document.querySelectorAll(".scroll-link");
 scrollLinks.forEach(function (link) {
   link.addEventListener("click", (e) => {
     e.preventDefault();
@@ -55,8 +99,6 @@ scrollLinks.forEach(function (link) {
     document.body.classList.remove("disabled-scroll");
   });
 });
-
-const products = document.querySelectorAll(".product-container");
 
 window.addEventListener("scroll", () => {
   const height = (window.innerHeight / 5) * 4;
