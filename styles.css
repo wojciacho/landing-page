@@ -108,7 +108,7 @@ span {
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(34, 31, 31)),
     url("./img/blazer2.png") no-repeat;
-  background-position: bottom;
+  background-position: center;
   background-attachment: fixed;
   height: 100vh;
   place-items: center;
@@ -148,10 +148,6 @@ span {
 .btn:hover {
   background: var(--white-color);
   color: var(--dark-blue-color);
-}
-
-.container {
-  margin: 20px 0;
 }
 
 .section {
@@ -306,14 +302,14 @@ span {
 
 /* END ARRIVALS SECTION */
 
-@media (max-width: 868px) {
+@media (max-width: 768px) {
   body.disabled-scroll {
     overflow: hidden;
   }
 
   .hero {
     background-position: center;
-    background-size: 50%;
+    background-size: 70%;
   }
 
   .navbar .navbar-list {
@@ -355,11 +351,6 @@ span {
     flex-wrap: wrap;
   }
 
-  .container {
-    padding: 0 20px;
-    margin: 20px 0;
-  }
-
   .title {
     text-align: center;
     padding: 20px 0;
@@ -374,17 +365,18 @@ span {
 
   .about-img {
     background-size: cover;
-    width: 280px;
+    width: 90%;
     border-radius: 10px;
   }
 
   .img-container {
-    align-self: center;
+    text-align: center;
   }
 
   .about-desc {
-    width: 50%;
+    width: 90%;
     margin: auto;
+    text-align: left;
   }
 
   .find-container {
