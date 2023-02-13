@@ -15,7 +15,9 @@
   <body>
     <nav class="navbar">
       <div class="content">
-        <div class="logo"><span>.</span>STORE</div>
+        <div class="logo">
+          <span>.</span><a href="#home" class="scroll-link">STORE</a>
+        </div>
         <ul class="navbar-list">
           <div class="icon close-btn">
             <i class="fas fa-times"></i>
@@ -27,13 +29,13 @@
             <a href="#arrivals" class="scroll-link">New Arrivals</a>
           </li>
           <li>
-            <a href="#gallery" class="scroll-link">Discover</a>
+            <a href="#discover" class="scroll-link">Discover</a>
           </li>
           <li>
             <a href="#about" class="scroll-link">About</a>
           </li>
           <li>
-            <a href="#" class="scroll-link">Contact</a>
+            <a href="#contact" class="scroll-link">Contact</a>
           </li>
         </ul>
         <div class="icon open-btn">
@@ -84,33 +86,64 @@
     <section id="arrivals" class="section" xyz="small-25%">
       <h2 class="title">New <span>Arrivals</span></h2>
       <div class="arrivals-container">
-        <div class="product-container xyz-out">
+        <div class="product-wrapper xyz-out">
           <img src="./img/blazer.png" alt="blazer" class="product-img" />
           <span class="product-title">BLAZER</span>
           <span class="product-price">$199</span>
           <span class="product-desc">Lorem ipsum dolor sit amet.</span>
           <button class="product-btn">BUY NOW</button>
         </div>
-        <div class="product-container xyz-out">
+        <div class="product-wrapper xyz-out">
           <img src="./img/crater.png" alt="crater" class="product-img" />
           <span class="product-title">CRATER</span>
           <span class="product-price">$299</span>
           <span class="product-desc">Lorem ipsum dolor sit amet.</span>
           <button class="product-btn">BUY NOW</button>
         </div>
-        <div class="product-container xyz-out">
+        <div class="product-wrapper xyz-out">
           <img src="./img/hippie.png" alt="hippie" class="product-img" />
           <span class="product-title">HIPPIE</span>
           <span class="product-price">$229</span>
           <span class="product-desc">Lorem ipsum dolor sit amet.</span>
           <button class="product-btn">BUY NOW</button>
         </div>
-        <div class="product-container xyz-out">
+        <div class="product-wrapper xyz-out">
           <img src="./img/blazer2.png" alt="blazer" class="product-img" />
           <span class="product-title">BLAZER</span>
           <span class="product-price">$199</span>
           <span class="product-desc">Lorem ipsum dolor sit amet.</span>
           <button class="product-btn">BUY NOW</button>
+        </div>
+      </div>
+    </section>
+    <section id="discover" class="section" xyz="small-25%">
+      <h2 class="title">Discover <span>Us</span></h2>
+      <div class="discover-container">
+        <div class="discover-wrapper xyz-out">
+          <h2 class="title">Be <span>Yourself</span></h2>
+          <img
+            src="https://images.pexels.com/photos/9295809/pexels-photo-9295809.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt="discover"
+            class="discover-img"
+          />
+        </div>
+        <div class="discover-wrapper xyz-out">
+          <img
+            src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt="discover"
+            class="discover-img"
+          />
+          <h2 class="title">
+            This is the First Day of <span>Your New Life</span>
+          </h2>
+        </div>
+        <div class="discover-wrapper xyz-out">
+          <h2 class="title">Just Do <span>It</span></h2>
+          <img
+            src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt="discover"
+            class="discover-img"
+          />
         </div>
       </div>
     </section>
@@ -145,6 +178,48 @@
         </div>
       </div>
     </section>
+    <footer id="contact">
+      <div class="footer-container">
+        <h2 class="title">Contact <span>Us</span></h2>
+        <div class="footer-row">
+          <div class="footer-wrapper">
+            <h3>Find <span>Us</span></h3>
+            <p>Address</p>
+            <span class="footer-info">562 East 50th Place Chicago</span>
+          </div>
+          <div class="footer-wrapper">
+            <h3>Call <span>Us</span></h3>
+            <p>Phone</p>
+            <span class="footer-info">111-111-1111</span>
+          </div>
+          <div class="footer-wrapper">
+            <h3>Mail <span>Us</span></h3>
+            <p>Email</p>
+            <span class="footer-info">info@example.com</span>
+          </div>
+        </div>
+        <div class="social-wrapper">
+          <h3>Follow <span>Us</span></h3>
+          <ul class="social-icons">
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-telegram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="payment"></div>
+
     <script src="app.js"></script>
   </body>
 </html>
