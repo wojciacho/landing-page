@@ -111,6 +111,7 @@ span {
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
+  -webkit-background-clip: border-box;
   height: 100vh;
   place-items: center;
   display: flex;
