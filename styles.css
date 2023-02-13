@@ -110,6 +110,7 @@ span {
     url("./img/blazer2.png") no-repeat;
   background-position: center;
   background-attachment: fixed;
+  background-size: cover;
   -webkit-background-clip: border-box;
   height: 100vh;
   place-items: center;
