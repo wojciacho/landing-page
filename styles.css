@@ -120,7 +120,6 @@ span {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(34, 31, 31)),
     url("./img/blazer.png") no-repeat;
   background-position: center;
-  background-attachment: fixed;
   -webkit-background-clip: border-box;
   height: 100vh;
   place-items: center;
